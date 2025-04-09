@@ -14,7 +14,6 @@ body,
   height: 100%;
   width: 100%;
   @apply text-sm;
-
 }
 
 /* Light Theme (Default) */
@@ -22,9 +21,9 @@ body,
   /* Base White & Black */
   --base-color-white: #ffffff;
   --base-color-black: #000000;
-  
+
   /* Base Gray Palette */
-  --base-gray-50:  #f9fafb;
+  --base-gray-50: #f9fafb;
   --base-gray-100: #f3f4f6;
   --base-gray-200: #e5e7eb;
   --base-gray-300: #d1d5db;
@@ -34,9 +33,9 @@ body,
   --base-gray-700: #374151;
   --base-gray-800: #1f2937;
   --base-gray-900: #111827;
-  
+
   /* Base Red Palette */
-  --base-red-50:  #fef2f2;
+  --base-red-50: #fef2f2;
   --base-red-100: #fee2e2;
   --base-red-200: #fecaca;
   --base-red-300: #fca5a5;
@@ -46,9 +45,9 @@ body,
   --base-red-700: #b91c1c;
   --base-red-800: #991b1b;
   --base-red-900: #7f1d1d;
-  
+
   /* Base Yellow Palette */
-  --base-yellow-50:  #fffbeb;
+  --base-yellow-50: #fffbeb;
   --base-yellow-100: #fef3c7;
   --base-yellow-200: #fde68a;
   --base-yellow-300: #fcd34d;
@@ -58,9 +57,9 @@ body,
   --base-yellow-700: #b45309;
   --base-yellow-800: #92400e;
   --base-yellow-900: #78350f;
-  
+
   /* Base Green Palette */
-  --base-green-50:  #f0fdf4;
+  --base-green-50: #f0fdf4;
   --base-green-100: #dcfce7;
   --base-green-200: #bbf7d0;
   --base-green-300: #86efac;
@@ -70,9 +69,9 @@ body,
   --base-green-700: #15803d;
   --base-green-800: #166534;
   --base-green-900: #14532d;
-  
+
   /* Base Blue Palette */
-  --base-blue-50:  #eff6ff;
+  --base-blue-50: #eff6ff;
   --base-blue-100: #dbeafe;
   --base-blue-200: #bfdbfe;
   --base-blue-300: #93c5fd;
@@ -82,9 +81,9 @@ body,
   --base-blue-700: #1d4ed8;
   --base-blue-800: #1e40af;
   --base-blue-900: #1e3a8a;
-  
+
   /* Base Indigo Palette */
-  --base-indigo-50:  #eef2ff;
+  --base-indigo-50: #eef2ff;
   --base-indigo-100: #e0e7ff;
   --base-indigo-200: #c7d2fe;
   --base-indigo-300: #a5b4fc;
@@ -94,9 +93,9 @@ body,
   --base-indigo-700: #4338ca;
   --base-indigo-800: #3730a3;
   --base-indigo-900: #312e81;
-  
+
   /* Base Purple Palette */
-  --base-purple-50:  #faf5ff;
+  --base-purple-50: #faf5ff;
   --base-purple-100: #f3e8ff;
   --base-purple-200: #e9d5ff;
   --base-purple-300: #d8b4fe;
@@ -106,9 +105,9 @@ body,
   --base-purple-700: #7e22ce;
   --base-purple-800: #6b21a8;
   --base-purple-900: #581c87;
-  
+
   /* Base Pink Palette */
-  --base-pink-50:  #fdf2f8;
+  --base-pink-50: #fdf2f8;
   --base-pink-100: #fce7f3;
   --base-pink-200: #fbcfe8;
   --base-pink-300: #f9a8d4;
@@ -118,14 +117,14 @@ body,
   --base-pink-700: #be185d;
   --base-pink-800: #9d174d;
   --base-pink-900: #831843;
-  
+
   /* -----------------------
      Light Mode Working Variables (using --color- prefix)
      ----------------------- */
   --color-white: var(--base-color-white);
   --color-black: var(--base-color-black);
-  
-  --color-gray-50:  var(--base-gray-50);
+
+  --color-gray-50: var(--base-gray-50);
   --color-gray-100: var(--base-gray-100);
   --color-gray-200: var(--base-gray-200);
   --color-gray-300: var(--base-gray-300);
@@ -135,7 +134,7 @@ body,
   --color-gray-700: var(--base-gray-700);
   --color-gray-800: var(--base-gray-800);
   --color-gray-900: var(--base-gray-900);
-  
+
   --color-red-50: var(--base-red-50);
   --color-red-100: var(--base-red-100);
   --color-red-200: var(--base-red-200);
@@ -146,7 +145,7 @@ body,
   --color-red-700: var(--base-red-700);
   --color-red-800: var(--base-red-800);
   --color-red-900: var(--base-red-900);
-  
+
   --color-yellow-50: var(--base-yellow-50);
   --color-yellow-100: var(--base-yellow-100);
   --color-yellow-200: var(--base-yellow-200);
@@ -157,7 +156,7 @@ body,
   --color-yellow-700: var(--base-yellow-700);
   --color-yellow-800: var(--base-yellow-800);
   --color-yellow-900: var(--base-yellow-900);
-  
+
   --color-green-50: var(--base-green-50);
   --color-green-100: var(--base-green-100);
   --color-green-200: var(--base-green-200);
@@ -168,7 +167,7 @@ body,
   --color-green-700: var(--base-green-700);
   --color-green-800: var(--base-green-800);
   --color-green-900: var(--base-green-900);
-  
+
   --color-blue-50: var(--base-blue-50);
   --color-blue-100: var(--base-blue-100);
   --color-blue-200: var(--base-blue-200);
@@ -179,7 +178,7 @@ body,
   --color-blue-700: var(--base-blue-700);
   --color-blue-800: var(--base-blue-800);
   --color-blue-900: var(--base-blue-900);
-  
+
   --color-indigo-50: var(--base-indigo-50);
   --color-indigo-100: var(--base-indigo-100);
   --color-indigo-200: var(--base-indigo-200);
@@ -190,7 +189,7 @@ body,
   --color-indigo-700: var(--base-indigo-700);
   --color-indigo-800: var(--base-indigo-800);
   --color-indigo-900: var(--base-indigo-900);
-  
+
   --color-purple-50: var(--base-purple-50);
   --color-purple-100: var(--base-purple-100);
   --color-purple-200: var(--base-purple-200);
@@ -201,7 +200,7 @@ body,
   --color-purple-700: var(--base-purple-700);
   --color-purple-800: var(--base-purple-800);
   --color-purple-900: var(--base-purple-900);
-  
+
   --color-pink-50: var(--base-pink-50);
   --color-pink-100: var(--base-pink-100);
   --color-pink-200: var(--base-pink-200);
@@ -223,7 +222,7 @@ body,
   --color-black: var(--base-color-white);
 
   /* Invert Gray */
-  --color-gray-50:  var(--base-gray-900);
+  --color-gray-50: var(--base-gray-900);
   --color-gray-100: var(--base-gray-800);
   --color-gray-200: var(--base-gray-700);
   --color-gray-300: var(--base-gray-600);
@@ -235,7 +234,7 @@ body,
   --color-gray-900: var(--base-gray-50);
 
   /* Invert Red */
-  --color-red-50:  var(--base-red-900);
+  --color-red-50: var(--base-red-900);
   --color-red-100: var(--base-red-800);
   --color-red-200: var(--base-red-700);
   --color-red-300: var(--base-red-600);
@@ -247,7 +246,7 @@ body,
   --color-red-900: var(--base-red-50);
 
   /* Invert Yellow */
-  --color-yellow-50:  var(--base-yellow-900);
+  --color-yellow-50: var(--base-yellow-900);
   --color-yellow-100: var(--base-yellow-800);
   --color-yellow-200: var(--base-yellow-700);
   --color-yellow-300: var(--base-yellow-600);
@@ -259,7 +258,7 @@ body,
   --color-yellow-900: var(--base-yellow-50);
 
   /* Invert Green */
-  --color-green-50:  var(--base-green-900);
+  --color-green-50: var(--base-green-900);
   --color-green-100: var(--base-green-800);
   --color-green-200: var(--base-green-700);
   --color-green-300: var(--base-green-600);
@@ -271,7 +270,7 @@ body,
   --color-green-900: var(--base-green-50);
 
   /* Invert Blue */
-  --color-blue-50:  var(--base-blue-900);
+  --color-blue-50: var(--base-blue-900);
   --color-blue-100: var(--base-blue-800);
   --color-blue-200: var(--base-blue-700);
   --color-blue-300: var(--base-blue-600);
@@ -283,7 +282,7 @@ body,
   --color-blue-900: var(--base-blue-50);
 
   /* Invert Indigo */
-  --color-indigo-50:  var(--base-indigo-900);
+  --color-indigo-50: var(--base-indigo-900);
   --color-indigo-100: var(--base-indigo-800);
   --color-indigo-200: var(--base-indigo-700);
   --color-indigo-300: var(--base-indigo-600);
@@ -295,7 +294,7 @@ body,
   --color-indigo-900: var(--base-indigo-50);
 
   /* Invert Purple */
-  --color-purple-50:  var(--base-purple-900);
+  --color-purple-50: var(--base-purple-900);
   --color-purple-100: var(--base-purple-800);
   --color-purple-200: var(--base-purple-700);
   --color-purple-300: var(--base-purple-600);
@@ -307,7 +306,7 @@ body,
   --color-purple-900: var(--base-purple-50);
 
   /* Invert Pink */
-  --color-pink-50:  var(--base-pink-900);
+  --color-pink-50: var(--base-pink-900);
   --color-pink-100: var(--base-pink-800);
   --color-pink-200: var(--base-pink-700);
   --color-pink-300: var(--base-pink-600);
@@ -317,4 +316,16 @@ body,
   --color-pink-700: var(--base-pink-200);
   --color-pink-800: var(--base-pink-100);
   --color-pink-900: var(--base-pink-50);
+}
+
+@media (min-width: 768px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh);
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh);
+  }
 }
