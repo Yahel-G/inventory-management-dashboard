@@ -1,7 +1,7 @@
 MediaSourceHandle.exports = {
     apps: [
         {
-            name: "inventory-management",
+            name: "inventory-management-dashboard",
             script: "npm",
             args: "run dev",
             env: {
