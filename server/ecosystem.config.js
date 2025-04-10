@@ -1,4 +1,4 @@
-MediaSourceHandle.exports = {
+module.exports = {
     apps: [
         {
             name: "inventory-management-dashboard",
@@ -7,7 +7,7 @@ MediaSourceHandle.exports = {
             env: {
                 NODE_ENV: "development",
                 ENV_VAR1: "environment variable",
-            }
-        }
-    ]
-}
+            },
+        },
+    ],
+};
