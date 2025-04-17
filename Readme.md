@@ -100,6 +100,7 @@ inventory-management-dashboard/
     src/                 # Server source code (Express or Lambda functions)
     package.json         # Server dependencies and scripts
   README.md              # Project overview and instructions
+\`\`\`
 
 ## Theming (Light/Dark Mode)
 
