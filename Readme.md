@@ -82,26 +82,24 @@ In each directory (\`client/\` and \`server/\`), you can run:
 
 ## Project Structure
 
-\`\`\`plaintext
+```plaintext
 inventory-management-dashboard/
-├── client/               # Next.js frontend
-│   ├── public/           # Static assets (e.g., logo)
-│   ├── src/
-│   │   ├── app/          # Next.js App directory (layouts, providers)
-│   │   ├── components/   # Reusable React components (Sidebar, Cards)
-│   │   ├── state/        # Redux store, slices, RTK Query API
-│   │   ├── hooks/        # Custom React hooks (useDarkMode)
-│   │   ├── styles/       # globals.css (Tailwind + CSS variables)
-│   │   └── pages/        # Legacy pages directory (if used)
-│   ├── tailwind.config.ts # Tailwind CSS configuration
-│   ├── postcss.config.js  # PostCSS configuration
-│   └── next.config.mjs    # Next.js configuration
-├── server/               # Backend application (API handlers / Lambdas)
-│   ├── src/              # Server source code (Express routes or Lambda functions)
-│   ├── package.json      # Server dependencies and scripts
-│   └── ...
-└── README.md             # Project overview and instructions
-\`\`\`
+  client/                # Next.js frontend
+    public/              # Static assets (e.g., logo)
+    src/
+      app/               # Next.js App directory (layouts, providers)
+      components/        # Reusable React components (Sidebar, Cards)
+      state/             # Redux store, slices, RTK Query API
+      hooks/             # Custom React hooks (useDarkMode)
+      styles/            # globals.css (Tailwind + CSS variables)
+      pages/             # Next.js pages directory
+    tailwind.config.ts   # Tailwind CSS configuration
+    postcss.config.js    # PostCSS configuration
+    next.config.mjs      # Next.js configuration
+  server/                # Backend application (API handlers / Lambdas)
+    src/                 # Server source code (Express or Lambda functions)
+    package.json         # Server dependencies and scripts
+  README.md              # Project overview and instructions
 
 ## Theming (Light/Dark Mode)
 
