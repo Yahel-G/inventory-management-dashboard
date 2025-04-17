@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-/*    remotePatterns: [
+    remotePatterns: [
       {
         protocol: "https",
-        hostname: "",
+        hostname: "yahel-s3-inventorymanagement.s3.eu-north-1.amazonaws.com",
         port: "",
         pathname: "/**",
       },
     ], 
-    */
+    
   },
 };
 
