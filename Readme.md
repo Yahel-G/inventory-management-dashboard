@@ -42,83 +42,38 @@ A modern, responsive inventory management dashboard built with Next.js, React, R
 
 ## Installation
 
-1. **Clone the repository**  
-   \`\`\`bash
-   git clone https://github.com/your-username/inventory-management-dashboard.git
-   cd inventory-management-dashboard
-   \`\`\`
+1. **Clone the repository**:  
+    git clone https://github.com/your-username/inventory-management-dashboard.git  
+    cd inventory-management-dashboard  
 
-2. **Install dependencies**  
-   \`\`\`bash
-   cd client
-   npm install
-   # or
-   yarn install
-
-   cd ../server
-   npm install
-   # or
-   yarn install
-   \`\`\`
+2. **Install dependencies**:  
+    cd client  
+    npm install (or `yarn install`)  
+    cd ../server  
+    npm install (or `yarn install`)  
 
 ## Environment Variables
 
-Create a \`.env.local\` file in the \`client/\` directory with the following variables:
-
-\`\`\`env
-NEXT_PUBLIC_API_BASE_URL=https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>
-# Any other env variables your API requires
-\`\`\`
-
-## Available Scripts
-
-In each directory (\`client/\` and \`server/\`), you can run:
-
-- \`npm run dev\` / \`yarn dev\` – runs the app in development mode  
-  - In \`client/\`, serves the Next.js frontend at \`http://localhost:3000\`  
-  - In \`server/\`, starts the backend API (e.g. Express or AWS Lambda offline)  
-- \`npm run build\` / \`yarn build\` – builds the application for production  
-- \`npm run start\` / \`yarn start\` – starts the production server  
-
-## Project Structure
-
-```plaintext
-inventory-management-dashboard/
-  client/                # Next.js frontend
-    public/              # Static assets (e.g., logo)
-    src/
-      app/               # Next.js App directory (layouts, providers)
-      components/        # Reusable React components (Sidebar, Cards)
-      state/             # Redux store, slices, RTK Query API
-      hooks/             # Custom React hooks (useDarkMode)
-      styles/            # globals.css (Tailwind + CSS variables)
-      pages/             # Next.js pages directory
-    tailwind.config.ts   # Tailwind CSS configuration
-    postcss.config.js    # PostCSS configuration
-    next.config.mjs      # Next.js configuration
-  server/                # Backend application (API handlers / Lambdas)
-    src/                 # Server source code (Express or Lambda functions)
-    package.json         # Server dependencies and scripts
-  README.md              # Project overview and instructions
-\`\`\`
+Create a `.env.local` file in the `client/` directory with the following variables:  
+    NEXT_PUBLIC_API_BASE_URL=https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>  
+    # Any other env variables your API requires  
 
 ## Theming (Light/Dark Mode)
 
-- CSS custom properties are defined in \`globals.css\` under \`:root\` and \`.dark\`.  
-- Tailwind config maps color utilities to these CSS variables (e.g., \`bg-white\` → \`var(--color-white)\`).  
-- Theme toggle logic adds/removes the \`.dark\` class on \`<html>\`, and persists choice in \`localStorage\` via a custom hook (\`useDarkMode\`).  
+- CSS custom properties are defined in `globals.css` under `:root` and `.dark`.  
+- Tailwind maps color utilities to these variables (e.g., `bg-white` → `var(--color-white)`).  
+- Theme toggle adds/removes `.dark` on `<html>` and persists choice via `useDarkMode`.  
 
 ## API Integration
 
-- Data is fetched using RTK Query (\`useGetDashboardMetricsQuery\`) from your AWS API Gateway endpoints.  
-- Endpoints should return a JSON object with properties like \`salesSummary\`, \`expenseSummary\`, etc.  
+- Data is fetched with RTK Query (`useGetDashboardMetricsQuery`) from AWS API Gateway.  
+- Endpoints return JSON with `salesSummary`, `expenseSummary`, etc.  
 
 ## Deployment
 
-After running \`npm run build\`, you can deploy the production build to AWS using services like:
+After `npm run build`, deploy to AWS:  
+- **S3 & CloudFront:** Upload the `out/` directory and serve via CDN.  
+- **Amplify:** Connect repo for automatic builds and hosting.  
+- **EC2/ECS:** Run Node.js server, fronted by ALB.  
 
-- **S3 & CloudFront:** Upload the static \`out/\` directory to an S3 bucket and serve it via CloudFront for global CDN delivery.  
-- **Amplify:** Connect your repository to AWS Amplify for continuous deployment; Amplify will build, deploy, and host your app automatically.  
-- **EC2 / ECS:** Run a Node.js server on EC2 or in a Docker container on ECS, then point a load balancer (ALB) to your instance or service.  
-
-Be sure to configure your environment variables (\`NEXT_PUBLIC_API_BASE_URL\`, etc.) in each service’s settings so your app can access the API Gateway endpoints.  
+Ensure environment variables (`NEXT_PUBLIC_API_BASE_URL`, etc.) are set in each service.  
