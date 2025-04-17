@@ -9,8 +9,6 @@ A modern, responsive inventory management dashboard built with Next.js, React, R
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
-- [Available Scripts](#available-scripts)
-- [Project Structure](#project-structure)
 - [Theming (Light/Dark Mode)](#theming-lightdark-mode)
 - [API Integration](#api-integration)
 - [Deployment](#deployment)
